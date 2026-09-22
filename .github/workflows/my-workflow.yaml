@@ -1,9 +1,13 @@
 name: Myfirst Workflow
-on:push
+on: push
 jobs:
     job-1:
         runs-on: ubuntu-latest
         steps:
-            - 
-            - name: Run a one-line script
+            - name: Hello World Step
               run: echo Hello, world!
+    job-2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Second And Final Step
+              run: echo Hello, world!          
