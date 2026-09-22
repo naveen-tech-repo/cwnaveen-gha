@@ -20,10 +20,10 @@
 
 
 name: Myfirst Workflow For Event
-on : push
+on : [push,workflow_dispatch]
 jobs:
     event-job:
         runs-on: ubuntu-latest
         steps:
             - name: Hello World Steep For event
-              run: echo Hello, world! th event is ${{ github.event_name }}
+              run: echo Hello, world! th event is ${{ github.event_name }}g
